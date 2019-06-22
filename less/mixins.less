@@ -9,8 +9,12 @@
 
 //button
 
-.btn(@color, @bg) {
+.btn(@color, @bg, @height, @width) {
   color: @color;
   background: @bg;
   border-radius: 5px;
+  font-size: 2rem;
+  .flex(row nowrap, center, center);
+  width: @width;
+  height: @height;
 }
