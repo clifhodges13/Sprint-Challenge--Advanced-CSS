@@ -20,7 +20,7 @@
   }
 
   .space-images {
-    display: flex;
+    .flexRow();
     flex-wrap: wrap;
     width: 100%;
 
@@ -63,7 +63,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
+    .flexRow();
     justify-content: center;
 
     @media @phone {
@@ -113,8 +113,7 @@
       }
       
       img {
-        width: 100%;
-        height: auto;
+        .imgDimensions();
         border-radius: 10px;
       }
     }

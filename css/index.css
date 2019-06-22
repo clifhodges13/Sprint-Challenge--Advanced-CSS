@@ -225,6 +225,7 @@ footer {
 }
 .home .space-images {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -267,6 +268,7 @@ footer {
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 @media (max-width: 500px) {
