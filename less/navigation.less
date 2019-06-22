@@ -1,1 +1,26 @@
-// Navigation code here
+.nav {
+  .flex(column nowrap, space-around, center);
+  padding: 1% 0;
+  background: @nav-bg;
+  border-bottom: 1px solid @nav-border;
+
+  .logo {
+    margin-bottom: 1%;
+    color: @nav-font;
+
+    h1 {
+      font-size: 4rem;
+    }
+  }
+
+  .menu {
+    .flex(row nowrap, space-between, center);
+    width: 23.5%;
+
+    a {
+      text-decoration: none;
+      color: @nav-font;
+      font-size: 1.6rem;
+    }
+  }
+}
