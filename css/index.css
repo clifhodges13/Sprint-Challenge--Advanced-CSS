@@ -1,3 +1,38 @@
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInBottom {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  65% {
+    transform: translateY(-150px) translateX(100px);
+    opacity: 1;
+    color: white;
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,6 +203,9 @@ p {
   padding: 1% 0;
   background: #F6F6F6;
   border-bottom: 1px solid #F1F1F1;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 @media (max-width: 500px) {
   .nav {
@@ -177,6 +215,7 @@ p {
 .nav .logo {
   margin-bottom: 1%;
   color: #454A59;
+  animation: slideInLeft 1.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 @media (max-width: 500px) {
   .nav .logo {
@@ -192,6 +231,7 @@ p {
   justify-content: space-between;
   align-items: center;
   width: 30%;
+  animation: slideInRight 1.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 @media (max-width: 500px) {
   .nav .menu {
@@ -213,12 +253,16 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home {
+  transform: translateY(110px);
+}
 .home .intro .header-img {
   border-radius: 5px;
   max-width: 100%;
 }
 .home .intro h2 {
   padding: 15px;
+  animation: slideInBottom 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.9s;
 }
 .home .intro p {
   padding: 0 15px;
@@ -340,4 +384,12 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.email-signup form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20% auto;
+  width: 100%;
 }
