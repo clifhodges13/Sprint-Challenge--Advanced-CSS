@@ -1,76 +1,33 @@
-//dimensions for images without distorting
-
-.imgDimensions() {
-  width: 100%;
-  height: auto;
-}
-
-//flex container row
-
-.flexRow() {
-  display: flex;
-  flex-direction: row;
-}
-
-//flex container parametric
-
-.flex(@flow, @justify, @align) {
-  display: flex;
-  flex-flow: @flow;
-  justify-content: @justify;
-  align-items: @align;
-}
-
-//button
-
-.btn(@color, @bg, @height, @width) {
-  color: @color;
-  background: @bg;
-  border-radius: 5px;
-  font-size: 2rem;
-  .flex(row nowrap, center, center);
-  width: @width;
-  height: @height;
-}
-
-//animations
-
 @keyframes slideInLeft {
   from {
     transform: translateX(-500px);
     opacity: 0;
   }
-
   to {
     transform: translateX(0);
     opacity: 1;
   }
 }
-
 @keyframes slideInRight {
   from {
     transform: translateX(500px);
     opacity: 0;
   }
-
   to {
     transform: translateX(0);
     opacity: 1;
   }
 }
-
 @keyframes slideInBottom {
   0% {
     transform: translateY(0) translateX(0);
     opacity: 0;
   }
-
   65% {
     transform: translateY(-150px) translateX(100px);
     opacity: 1;
     color: white;
   }
-
   100% {
     transform: translateY(0) translateX(0);
     opacity: 1;

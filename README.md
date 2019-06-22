@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    1. Adaptive design uses a different layout for different screen sizes. You create different files at each size. Responsive design uses one file that responds to the screen size via media queries. Ideally it looks good at all sizes.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    2. In Mobile First design, you start by designing the layout to work on mobile devices, then add media queries with (min-width) breakpoints for larger devices. With Desktop First, it is the opposite, utilizing (max-width) for smaller screens.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    3. It makes 1rem = 10px which makes it much easier to calculate. For example, 1.6rem = 16px.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    4. Preprocessing is a way to write CSS. It gives us organizational and computational tools which make our lives as CSS developers much easier.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    5. I really love the mixins. They allow you to write such clean and reusable code. Also mixins give me the most trouble, which is a small amount, but sometimes trying to use variables in there is confusing and doesn’t work.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -126,10 +136,10 @@ In your solution, it is essential that you follow best practices and produce cle
 
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
 
-* [ ] Build a page of your choosing from the navigation items. Come up with content and images that fit the theme.
+* [ ✅ ] Build a page of your choosing from the navigation items. Come up with content and images that fit the theme.
 
-* [ ] Introduce CSS animations to your site.
+* [ ✅ ] Introduce CSS animations to your site.
 
-* [ ] Create a fixed navigation and add some opacity to the background
+* [ ✅ ] Create a fixed navigation and add some opacity to the background
 
-* [ ] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription
+* [ ✅ ] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription
